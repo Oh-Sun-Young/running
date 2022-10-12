@@ -15,9 +15,16 @@ public class PlayerBullet : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Enemy"))
         {
-            obj = collision.gameObject;
-            collision.gameObject.GetComponent<Animator>().SetTrigger("Die");
-            Invoke("EnemyDisable", 0.25f);
+            if (collision.gameObject.GetComponent<EnemyHP>() != null && Data.instance.characterPower < collision.gameObject.GetComponent<EnemyHP>().hp)
+            {
+                collision.gameObject.GetComponent<EnemyHP>().Damage();
+            }
+            else
+            {
+                obj = collision.gameObject;
+                collision.gameObject.GetComponent<Animator>().SetTrigger("Die");
+                Invoke("EnemyDisable", 0.25f);
+            }
             gameObject.SetActive(false);
         }
     }
