@@ -322,7 +322,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hp: 0
-  enemyHp: 10
+  enemyHp: 30
   sliderHp: {fileID: 8655123611111394430}
   damagePosition: {fileID: 7343888269955024986}
   damagePrefab: {fileID: 6410125037561258398, guid: 9cb33e1b5f42b424baea53135ccfdf13, type: 3}

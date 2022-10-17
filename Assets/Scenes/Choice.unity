@@ -2402,11 +2402,11 @@ MonoBehaviour:
   data:
   - name: Niki
     life: 3
-    power: 1
+    power: 10
     img: {fileID: 21300000, guid: be66b0319e1ce42139de849803d194a7, type: 3}
   - name: Allan
     life: 2
-    power: 2
+    power: 15
     img: {fileID: 21300000, guid: 4ee418e99554d494292cc9b02de0fa44, type: 3}
   characterType: 0
   characterLife: 0
@@ -10196,7 +10196,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxLife: 5
-  maxPower: 5
+  maxPower: 30
   isStart: 0
   audioClip:
   - {fileID: 8300000, guid: 188eb2e8baccc8741a121bf8aa8d26e3, type: 3}

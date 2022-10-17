@@ -8,8 +8,8 @@ public class ChoiceButtonManger : MonoBehaviour
 {
     private GameObject[] player;
 
-    [SerializeField] int maxLife = 5;
-    [SerializeField] int maxPower = 5;
+    [SerializeField] int maxLife;
+    [SerializeField] int maxPower;
     private int cntLife;
     private int cntPower;
 

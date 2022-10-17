@@ -118,7 +118,7 @@ public class Data : MonoBehaviour
     // 캐릭터 공격력 추가
     public void AddPower()
     {
-        characterPower++;
+        characterPower += 5;
     }
 
     // 코인 업데이트
